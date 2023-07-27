@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+   
+   
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: url('1.jpg');/* Add the background image URL here */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  .form-container {
+    flex: 1;
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label,
+  input,
+  select {
+    margin: 10px 0;
+  }
+
+  input,
+  select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .data-container {
+    flex: 1;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+    perspective: 1000px; /* Set the perspective for 3D transform */
+  }
+
+  #displayData {
+    margin-top: 20px;
+    display: flex; /* Display data in a row */
+    flex-direction: column;
+    gap: 10px; /* Add some gap between each data item */
+  }
+
+  #displayData h2 {
+    margin: 0; /* Remove margin from h2 elements */
+  }
+
+  #uploadedImage {
+    max-width: 100px; /* Adjust the image size as needed */
+    border-radius: 5px;
+  }
+
+  .success-box {
+    display: none;
+    background: #39b54a;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+  }
